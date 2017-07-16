@@ -1,0 +1,13 @@
+<% var obj = site.data.menu[section] %>
+
+<div class="footer-block">
+  <h3 class="footer-block__title"><%= section %></h3>
+  <ul class="footer-menu">
+    <% for (var link in obj.children) { %>
+      <li class="footer-menu__item"><a href="<%= obj.children[link] %>" class="footer-menu__link"><%= link %></a></li>
+    <% } %>
+  </ul>
+  <% if(isCallToActionButton) { %>
+    <%- partial('../common/first-lesson-link') %>
+  <% } %>
+</div>

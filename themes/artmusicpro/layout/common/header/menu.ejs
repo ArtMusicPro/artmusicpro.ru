@@ -1,0 +1,25 @@
+<nav class="menu-block">
+  <button class="menu-block__toggle" type="button" data-toggle="collapse" data-target="#main-menu" aria-expanded="false" aria-controls="main-menu">
+      <svg class="menu-block__icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/icons-sprite.svg#menu-icon"></use>
+      </svg>
+  </button>
+  <ul class="menu collapse" id="main-menu">
+    <% for (var link in site.data.menu) { %>
+      <% // Определение переменной в котором храниться класс, который в последствии добавляется к активному пункту меню
+        var checkActive = "";
+        if(~page.path.indexOf(site.data.menu[link].alias)) { 
+          checkActive = " active"
+        }
+      %>
+      <li class="menu__item<%= checkActive %>" id="<%= site.data.menu[link].alias %>">
+        <a href="<%= site.data.menu[link].url %>" class="menu__link"><span><%= link %></span></a>
+        <ul class="second-menu">
+          <% for (var sublink in site.data.menu[link].children) { %>
+            <li><a href="<%= site.data.menu[link].children[sublink] %>" class="second-menu__link"> <%= sublink %> </a></li>
+          <% } %>
+        </ul>
+      </li>
+    <% } %>
+  </ul>
+</nav>
