@@ -55,14 +55,17 @@ collections: # A list of collections the CMS should be able to edit
       - name: "menu"
         label: "Главное меню"
         file: "source/_data/menunew.yml"
-        widget: "list"
         fields:
-          - {label: "Название", name: "name", widget: "string"}
-          - {label: "URL адрес", name: "url", widget: "string"}
-          - {label: "Псевдоним", name: "alias", widget: "string"}
-          - label: "Подпункты меню"
-            name: "children"
+          - label: "Пункты меню"
+            name: "menu"
             widget: "list"
             fields:
               - {label: "Название", name: "name", widget: "string"}
               - {label: "URL адрес", name: "url", widget: "string"}
+              - {label: "Псевдоним", name: "alias", widget: "string"}
+              - label: "Подпункты меню"
+                name: "children"
+                widget: "list"
+                fields:
+                  - {label: "Название", name: "name", widget: "string"}
+                  - {label: "URL адрес", name: "url", widget: "string"}
