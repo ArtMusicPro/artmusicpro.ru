@@ -7,12 +7,22 @@ media_folder: "source/assets/images/uploads" # Folder where user uploaded files 
 public_folder: "assets/images/uploads"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "_posts" # The path to the folder where the documents are stored
+  - name: "cource" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Курс" # Used in the UI, ie.: "New Post"
+    folder: "source/education/courses" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Foo", name: "foo", widget: "foo"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Шаблон", name: "layout", widget: "hidden", default: "cource"}
+      - {label: "Название курса", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Главная картинка курса", name: "banner", widget: "image", required: false}
+      - {label: "Описание курса", name: "description", widget: "markdown"}
+      - {label: "Стоимость курса", name: "price", widget: "string"}
+      - {label: "Подробное описание стоимости", name: "more-price", widget: "markdown"}
+      - {label: "Количество занятий курса", name: "number-lesson", widget: "number"}
+      - {label: "Продолжительность в месяцах", name: "month", widget: "number"}
+      - {label: "Состав слушателей", name: "members", widget: "list"}
+      - {label: "Место занятий", name: "place", widget: "list"}
+      - {label: "Возраст слушателей", name: "age", widget: "string"}
+      - {label: "Программа курса", name: "program", widget: "markdown"}
+      - {label: "Чему Вы научитесь", name: "result", widget: "markdown"}
