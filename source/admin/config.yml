@@ -47,8 +47,25 @@ collections: # A list of collections the CMS should be able to edit
         file: "source/_data/company.yml"
         fields:
           - {label: "Название", name: "name", widget: "string"}
-          - {label: "Логотип", name: "image", widget: "image", media_folder: "assets/images"}
+          - {label: "Логотип", name: "image", widget: "image", media_folder: "themes/artmusicpro/assets/images/"}
           - {label: "Номер телефона", name: "phone", widget: "string"}
           - {label: "Email", name: "email", widget: "string"}
           - {label: "Город", name: "city", widget: "string"}
           - {label: "Адрес", name: "address", widget: "string"}
+      - name: "menu"
+        label: "Главное меню"
+        file: "source/_data/menunew.yml"
+        fields:
+          - label: "Пункты меню"
+            name: "menu"
+            widget: "list"
+            fields:
+              - {label: "Название", name: "name", widget: "string"}
+              - {label: "URL адрес", name: "url", widget: "string"}
+              - {label: "Псевдоним", name: "alias", widget: "string"}
+              - label: "Подпункты меню"
+                name: "children"
+                widget: "list"
+                fields:
+                  - {label: "Название", name: "name", widget: "string"}
+                  - {label: "URL адрес", name: "url", widget: "string"}
