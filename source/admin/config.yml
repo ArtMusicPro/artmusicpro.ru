@@ -8,12 +8,13 @@ public_folder: "assets/images/uploads"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "cource" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Курс" # Used in the UI, ie.: "New Post"
-    folder: "/source/_content/_courses" # The path to the folder where the documents are stored
+    label: "Курс"
+    folder: "/source/_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
     fields: # The fields each document in this collection have
       - {label: "Шаблон", name: "layout", widget: "hidden", default: "cource"}
+      - {label: "Директория", name: "section", widget: "hidden", default: "/education/courses"}
       - {label: "Название курса", name: "title", widget: "string"}
       - {label: "Главная картинка курса", name: "banner", widget: "image", required: false}
       - {label: "Описание курса", name: "description", widget: "markdown"}
@@ -26,3 +27,28 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Возраст слушателей", name: "age", widget: "string"}
       - {label: "Программа курса", name: "program", widget: "markdown"}
       - {label: "Чему Вы научитесь", name: "result", widget: "markdown"}
+  
+  - name: "types-of-guitars" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Виды гитар"
+    folder: "/source/_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields each document in this collection have
+      - {label: "Шаблон", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Директория", name: "section", widget: "hidden", default: "/about-guitars/types-of-guitars"}
+      - {label: "Название вида", name: "title", widget: "string"}
+      - {label: "Главная картинка", name: "banner", widget: "image", required: false}
+      - {label: "Описание", name: "description", widget: "markdown"}
+  - name: "data"
+    label: "Данные"
+    files:
+      - name: "commpany"
+        label: "Организация"
+        file: "source/_data/characters.yml"
+        fields:
+          - {label: "Название", name: "name", widget: "string"}
+          - {label: "Image", name: "image", widget: "image", media_folder: "assets/images"}
+          - {label: "Номер телефона", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Город", name: "city", widget: "string"}
+          - {label: "Адрес", name: "address", widget: "string"}

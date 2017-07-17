@@ -1,5 +1,6 @@
 ---
 layout: cource
+section: /education/courses
 title: Базовый курс
 banner: /assets/images/uploads/basic.jpg
 description: >
