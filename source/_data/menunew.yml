@@ -1,0 +1,43 @@
+menu:
+  - alias: education
+    children:
+      - name: Курсы
+        url: /education/courses/
+      - name: Занятия
+        url: /education/lessons/
+      - name: Преподователи
+        url: /education/teachers/
+    name: Обучение
+    url: /education/
+  - alias: school
+    children:
+      - name: Помещение
+        url: /school/placement/
+      - name: /school/instruments/
+        url: Инструменты
+      - name: Мероприятия
+        url: /school/events/
+      - name: Отзывы
+        url: /school/reviews/
+      - name: Ученики
+        url: /school/clients/
+      - name: Контакты
+        url: /school/contacts/
+    name: Школа
+    url: /school/
+  - alias: about-guitars
+    children:
+      - name: Виды гитар
+        url: /about-guitars/types-of-guitars/
+      - name: Виды боя
+        url: /about-guitars/vidi-boya/
+      - name: Виды перебора
+        url: /about-guitars/vidi-perebora/
+      - name: Аккорды и ноты
+        url: /about-guitars/chords-and-notes/
+      - name: Стили игры
+        url: /about-guitars/guitar-styles/
+      - name: История
+        url: /about-guitars/history/
+    name: О гитарах
+    url: /about-guitars/
