@@ -5,18 +5,19 @@
       </svg>
   </button>
   <ul class="menu collapse" id="main-menu">
-    <% for (var link in site.data.menu) { %>
+    <% var menu = site.data.menu.menu; %>
+    <% for (var link in menu) { %>
       <% // Определение переменной в котором храниться класс, который в последствии добавляется к активному пункту меню
         var checkActive = "";
-        if(~page.path.indexOf(site.data.menu[link].alias)) { 
+        if(~page.path.indexOf(menu[link].alias)) { 
           checkActive = " active"
         }
       %>
-      <li class="menu__item<%= checkActive %>" id="<%= site.data.menu[link].alias %>">
-        <a href="<%= site.data.menu[link].url %>" class="menu__link"><span><%= link %></span></a>
+      <li class="menu__item<%= checkActive %>" id="<%= menu[link].alias %>">
+        <a href="<%= menu[link].url %>" class="menu__link"><span><%= menu[link].name %></span></a>
         <ul class="second-menu">
-          <% for (var sublink in site.data.menu[link].children) { %>
-            <li><a href="<%= site.data.menu[link].children[sublink] %>" class="second-menu__link"> <%= sublink %> </a></li>
+          <% for (var sublink in menu[link].children) { %>
+            <li><a href="<%= menu[link].children[sublink].url %>" class="second-menu__link"> <%= menu[link].children[sublink].name %> </a></li>
           <% } %>
         </ul>
       </li>

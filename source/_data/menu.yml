@@ -1,27 +1,43 @@
-Обучение: 
-  url: /education/
-  alias: education
-  children:
-    Курсы: /education/courses/
-    Занятия: /education/lessons/
-    Преподователи: /education/teachers/
-Школа: 
-  url: /school/
-  alias: school
-  children:
-    Помещение: /school/placement/
-    Инструменты: /school/instruments/
-    Мероприятия: /school/events/
-    Ученики: /school/clients/
-    Отзывы: /school/reviews/
-    Контакты: /school/contacts/
-О гитарах: 
-  url: /about-guitars/
-  alias: about-guitars
-  children:
-    Виды гитар: /about-guitars/types-of-guitars/
-    Виды боя: /about-guitars/vidi-boya/
-    Виды перебора: /about-guitars/vidi-perebora/
-    Аккоды и ноты: /about-guitars/chords-and-notes/
-    Стили игры: /about-guitars/guitar-styles/
-    История: /about-guitars/history/
+menu:
+  - alias: education
+    children:
+      - name: Курсы
+        url: /education/courses/
+      - name: Занятия
+        url: /education/lessons/
+      - name: Преподователи
+        url: /education/teachers/
+    name: Обучение
+    url: /education/
+  - alias: school
+    children:
+      - name: Помещение
+        url: /school/placement/
+      - name: Инструменты
+        url: /school/instruments/
+      - name: Мероприятия
+        url: /school/events/
+      - name: Отзывы
+        url: /school/reviews/
+      - name: Ученики
+        url: /school/clients/
+      - name: Контакты
+        url: /school/contacts/
+    name: Школа
+    url: /school/
+  - alias: about-guitars
+    children:
+      - name: Виды гитар
+        url: /about-guitars/types-of-guitars/
+      - name: Виды боя
+        url: /about-guitars/vidi-boya/
+      - name: Виды перебора
+        url: /about-guitars/vidi-perebora/
+      - name: Аккорды и ноты
+        url: /about-guitars/chords-and-notes/
+      - name: Стили игры
+        url: /about-guitars/guitar-styles/
+      - name: История
+        url: /about-guitars/history/
+    name: О гитарах
+    url: /about-guitars/
