@@ -1,5 +1,5 @@
 backend:
-  name: Bitbucket.com
+  name: github
   repo: ArtMusicPro/artmusicpro.ru # Path to your Github repository
   branch: master # Branch to update (master by default)
 
