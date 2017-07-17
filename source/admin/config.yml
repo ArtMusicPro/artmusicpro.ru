@@ -42,12 +42,12 @@ collections: # A list of collections the CMS should be able to edit
   - name: "data"
     label: "Данные"
     files:
-      - name: "commpany"
+      - name: "company"
         label: "Организация"
-        file: "source/_data/characters.yml"
+        file: "source/_data/company.yml"
         fields:
           - {label: "Название", name: "name", widget: "string"}
-          - {label: "Image", name: "image", widget: "image", media_folder: "assets/images"}
+          - {label: "Логотип", name: "image", widget: "image", media_folder: "assets/images"}
           - {label: "Номер телефона", name: "phone", widget: "string"}
           - {label: "Email", name: "email", widget: "string"}
           - {label: "Город", name: "city", widget: "string"}
