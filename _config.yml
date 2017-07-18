@@ -84,7 +84,7 @@ browsersync:
   logLevel: "warn"
   ghostMode:
     scroll: true
-  proxy:  "artmusicpro-celern.c9users.io:8082"
+  #proxy:  "artmusicpro-celern.c9users.io:8082"
   port: 8082
   script:
-    domain: "https://artmusicpro-celern.c9users.io:8082"
+    domain: "https://artmusicpro-ru-celern.c9users.io:8082"

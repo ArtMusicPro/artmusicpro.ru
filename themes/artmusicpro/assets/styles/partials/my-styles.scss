@@ -386,15 +386,18 @@
         font-size: 1.6em;
         font-weight: 300;
         color: #666;
+        & + .after-title__share {
+            flex: 0 0 60%;
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 100%;
+            }
+        }
         @include media-breakpoint-down(sm) {
             flex: 0 0 100%;
         }
     }
     &__share {
-        flex: 0 0 60%;
-        @include media-breakpoint-down(sm) {
-            flex: 0 0 100%;
-        }
+        flex: 0 0 100%;
     }
 }
 .main-image {

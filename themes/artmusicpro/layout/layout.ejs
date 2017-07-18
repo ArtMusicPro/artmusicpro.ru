@@ -4,33 +4,29 @@
 
 <%- partial('common/head') %>
 <body>
-  
   <%- partial('common/header') %>
-  
-  
-  <div class="breadcrumb-block">
-    <div class="container">
-
-    </div>
-  </div>
-
-
+  <%- partial('common/breadcrumb') %>
   <main class="main">
     <div class="container">
       <div class="main__title">
-        <h1 class="title"><%= page.title %></h1>
-        <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,skype,telegram" data-counter=""></div>
+        <% if(is_home()) { %>
+          <h1 class="title">Главная</h1>
+        <% } else { %>
+          <h1 class="title"><%= page.title %></h1>
+        <% } %>
+        <div class="after-title">
+          <% if(page.subtitle) { %>
+            <div class="after-title__place">в Химках</div>
+          <% } %>
+          <div class="after-title__share"><div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,skype,telegram" data-counter=""></div></div>
+        </div>
       </div>
       <%- body %>
     </div>
   </main>
-  
-  
-  <!--
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab2dac1fe73489c6e6037d44e31284963cd31a7a6e59012dbf6188191a9b35328&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=false"></script>
-    -->
   <%- partial('common/form') %>
   <%- partial('common/contacts') %>
+  <%- partial('common/map') %>
   <%- partial('common/footer') %>
   <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
   <script src="//yastatic.net/share2/share.js"></script>

@@ -8,28 +8,21 @@
   <!--<base href="/">-->
 
   <!-- Каноническая ссылка -->
-  <!--<link rel="canonical" href="/" />-->
+  <%- autoCanonical(config, page) %>
 
   <!-- DNS-prefetch -->
-  <meta http-equiv="x-dns-prefetch-control" content="on">
-  <!--<link rel="dns-prefetch" href="http://static-amp.udelta.ru">-->
+  <%- partial('head/dns-prefetch') %>
 
   <!-- SEO теги -->
-  <title>[dev] Главная</title>
-  <meta name="description" content="" />
-  <meta name="Keywords" content="Главная" />
+  <%- partial('head/seo') %>
 
   <!-- Теги Open Graph -->
-  <!--<meta property="og:locale" content="ru_RU" />-->
-  <!--<meta property="og:type" content="website" />-->
-  <!--<meta property="og:title" content="Главная" />-->
-  <!--<meta property="og:url" content="/index.html" />-->
-  <!--<meta property="og:site_name" content="Студия гитары 'ArtMusic Pro'" />-->
-  <!--<meta property="og:image" content="http://static-amp.udelta.ru/images/og/visitka.jpg" />-->
-  <!--<meta property="og:description" content="" />-->
+  <%- partial('head/open-graph') %>
 
   <!-- Favicons -->
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/commons.css">
+  <%- partial('head/favicons') %>
+  
+  <!-- CSS styles -->
+  <%- partial('head/css') %>
+  
 </head>

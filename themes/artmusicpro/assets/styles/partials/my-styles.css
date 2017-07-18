@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'media-breakpoint-down'.
-        on line 11 of /home/ubuntu/workspace/themes/artmusicpro/assets/style/partials/my-styles.scss, in `media-breakpoint-down'
-        from line 11 of /home/ubuntu/workspace/themes/artmusicpro/assets/style/partials/my-styles.scss
+        on line 11 of /home/ubuntu/workspace/themes/artmusicpro/assets/styles/partials/my-styles.scss, in `media-breakpoint-down'
+        from line 11 of /home/ubuntu/workspace/themes/artmusicpro/assets/styles/partials/my-styles.scss
 
 6:         width: 100%;
 7:         bottom: 0;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'media-breakpoint-down'.
 16:         }
 
 Backtrace:
-/home/ubuntu/workspace/themes/artmusicpro/assets/style/partials/my-styles.scss:11:in `media-breakpoint-down'
-/home/ubuntu/workspace/themes/artmusicpro/assets/style/partials/my-styles.scss:11
+/home/ubuntu/workspace/themes/artmusicpro/assets/styles/partials/my-styles.scss:11:in `media-breakpoint-down'
+/home/ubuntu/workspace/themes/artmusicpro/assets/styles/partials/my-styles.scss:11
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 /nix/store/zmisxnl63ica4zaviifixamr3xg27kzp-ruby-2.3.1-p0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -80,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-breakpoint-down'.\A         on line 11 of /home/ubuntu/workspace/themes/artmusicpro/assets/style/partials/my-styles.scss, in `media-breakpoint-down'\A         from line 11 of /home/ubuntu/workspace/themes/artmusicpro/assets/style/partials/my-styles.scss\A \A 6:         width: 100%;\A 7:         bottom: 0;\A 8:         background-color: #222;\A 9:         height: 63px;\A 10:         content: \"\";\A 11:         @include media-breakpoint-down(lg) {\A 12:             height: 56px;\A 13:         }\A 14:         @include media-breakpoint-down(md) {\A 15:             height: 46.19px;\A 16:         }"; }
+  content: "Error: Undefined mixin 'media-breakpoint-down'.\A         on line 11 of /home/ubuntu/workspace/themes/artmusicpro/assets/styles/partials/my-styles.scss, in `media-breakpoint-down'\A         from line 11 of /home/ubuntu/workspace/themes/artmusicpro/assets/styles/partials/my-styles.scss\A \A 6:         width: 100%;\A 7:         bottom: 0;\A 8:         background-color: #222;\A 9:         height: 63px;\A 10:         content: \"\";\A 11:         @include media-breakpoint-down(lg) {\A 12:             height: 56px;\A 13:         }\A 14:         @include media-breakpoint-down(md) {\A 15:             height: 46.19px;\A 16:         }"; }

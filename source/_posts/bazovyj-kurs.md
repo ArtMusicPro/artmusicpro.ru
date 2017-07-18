@@ -2,6 +2,8 @@
 layout: cource
 section: /education/courses
 title: Базовый курс
+breadcrumbs: [{name: Обучение, url: /education/},{name: Курсы, url: /education/courses/}]
+subtitle: true
 banner: /assets/images/uploads/basic.jpg
 description: >
   Данный курс - пропуск в мир гитары. Возможность понять ваш это инструмент или
