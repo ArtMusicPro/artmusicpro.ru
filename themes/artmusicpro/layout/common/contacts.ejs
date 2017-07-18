@@ -3,7 +3,7 @@
     <li class="contacts-list-item">
       <div class="contacts-list-item__icon">
         <svg class="contacts-list-item__icon-image">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/icons-sprite.svg#phone"></use>
+          <%- partial('use-in-svg', {icon: "phone"}) %>
         </svg>
       </div>
       <p class="contacts-list-item__phone"><%= site.data.company.phone %></p>
@@ -12,7 +12,7 @@
     <li class="contacts-list-item">
       <div class="contacts-list-item__icon">
         <svg class="contacts-list-item__icon-image">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/icons-sprite.svg#map-marker"></use>
+          <%- partial('use-in-svg', {icon: "map-marker"}) %>
         </svg>
       </div>
       <address class="contacts-list-item__address">
@@ -23,7 +23,7 @@
     <li class="contacts-list-item">
       <div class="contacts-list-item__icon">
         <svg class="contacts-list-item__icon-image contacts-list-item__icon-image_email">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/icons-sprite.svg#email"></use>
+          <%- partial('use-in-svg', {icon: "email"}) %>
         </svg>
       </div>
       <p class="contacts-list-item__email"><%= site.data.company.email %></p>

@@ -16,6 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Шаблон", name: "layout", widget: "hidden", default: "cource"}
       - {label: "Директория", name: "section", widget: "hidden", default: "/education/courses"}
       - {label: "Хлебные крошки", name: "breadcrumbs", widget: "hidden", default: "[{name: Обучение, url: /education/},{name: Курсы, url: /education/courses/}]"}
+      - {label: "Текущая страница в хлебных крошек", name: "breadcrumbCurrent", widget: "boolean", default: "true"}
       - {label: "Название курса", name: "title", widget: "string"}
       - {label: "в Химках", name: "subtitle", widget: "boolean"}
       - {label: "Главная картинка курса", name: "banner", widget: "image", required: false}

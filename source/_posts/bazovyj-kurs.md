@@ -3,6 +3,7 @@ layout: cource
 section: /education/courses
 title: Базовый курс
 breadcrumbs: [{name: Обучение, url: /education/},{name: Курсы, url: /education/courses/}]
+breadcrumbCurrent: true
 subtitle: true
 banner: /assets/images/uploads/basic.jpg
 description: >
