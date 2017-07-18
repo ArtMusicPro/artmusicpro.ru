@@ -33,7 +33,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Описание курса", name: "content", widget: "markdown"}
       - label: "SEO параметры страницы"
         name: "seo"
-        widget: "list"
         fields:
           - {label: "Тег Title", name: "title", widget: "string"}
           - {label: "Тег h1", name: "h1", widget: "string"}
