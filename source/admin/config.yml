@@ -17,10 +17,10 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Директория", name: "section", widget: "hidden", default: "/education/courses"}
       - {label: "Хлебные крошки", name: "breadcrumbs", widget: "hidden", default: "[{name: Обучение, url: /education/},{name: Курсы, url: /education/courses/}]"}
       - {label: "Текущая страница в хлебных крошек", name: "breadcrumbCurrent", widget: "boolean", default: "true"}
-      - {label: "Название курса", name: "title", widget: "string"}
+      - {label: "Краткое название курса", name: "title", widget: "string"}
+      - {label: "Полное название курса", name: "longtitle", widget: "string"}
       - {label: "в Химках", name: "subtitle", widget: "boolean"}
       - {label: "Главная картинка курса", name: "banner", widget: "image", required: false}
-      - {label: "Описание курса", name: "description", widget: "markdown"}
       - {label: "Стоимость курса", name: "price", widget: "string"}
       - {label: "Подробное описание стоимости", name: "more-price", widget: "markdown"}
       - {label: "Количество занятий курса", name: "number-lesson", widget: "number"}
@@ -30,7 +30,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Возраст слушателей", name: "age", widget: "string"}
       - {label: "Программа курса", name: "program", widget: "markdown"}
       - {label: "Чему Вы научитесь", name: "result", widget: "markdown"}
-  
+      - {label: "Описание курса", name: "content", widget: "markdown"}
   - name: "types-of-guitars" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Виды гитар"
     folder: "/source/_posts" # The path to the folder where the documents are stored
