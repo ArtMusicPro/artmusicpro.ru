@@ -12,16 +12,16 @@ longtitle: Базовый курс игры на гитаре
 subtitle: true
 banner: /assets/images/uploads/basic.jpg
 price: от 3500 руб. в месяц
-morePrice: >+
+morePrice: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt itaque vero
   consequuntur recusandae a nobis quas quo ex voluptates ullam inventore quam
   omnis excepturi aliquam harum autem perspiciatis officiis amet quasi corporis
-  delectus corrupti esse sit veniam doloribus beatae eveniet! 
-  
+  delectus corrupti esse sit veniam doloribus beatae eveniet!
+
+
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nulla
   impedit aliquid rem mollitia consequuntur possimus totam accusamus labore sint
   maiores non error odio repudiandae!
-
 numberLesson: '8'
 month: '1'
 members:
@@ -32,12 +32,12 @@ place:
 age: от 10 до 41 лет
 program:
   - устройство гитары
-  - постановка рук, физиология игры на инструменте
+  - 'постановка рук, физиология игры на инструменте'
   - изучение основных технических приемов
   - способы настройки гитары
-  - игра аккомпанемента, базовые аккорды
+  - 'игра аккомпанемента, базовые аккорды'
   - исполнение мелодических композиций
-  - упражнения на развитие музыкального слуха 
+  - упражнения на развитие музыкального слуха
 result: >
   Закончив этот курс обучения, вы сможете исполнить несколько мелодических пьес
   и порадовать своих близких песнями под аккомпанемент в собственном исполнении
@@ -58,5 +58,6 @@ seo:
 ---
 
 Данный курс - пропуск в мир гитары. Возможность понять ваш это инструмент или нет, оценить свои силы и узнать из каких основных закономерностей состоит музыка.
+
 
 
