@@ -350,6 +350,12 @@
             justify-content: center;
             margin-bottom: 35px;
         }
+        &_width-100 {
+            flex: 0 0 100%;
+            & + main__content {
+                flex: 0 0 100%;
+            }
+        }
     }
     &__content {
         flex: 0 0 60%;
