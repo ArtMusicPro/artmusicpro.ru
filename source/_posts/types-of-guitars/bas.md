@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: about-guitars
 section: /about-guitars
-title: Класическая
+title: Бас гитара
 banner: null
 description: |-
   Тестовая запись
@@ -9,4 +9,4 @@ description: |-
   Тестовая запись
 ---
 
-Тестовая запись
+ Бас гитара 2
