@@ -1,6 +1,6 @@
 ---
 layout: cource
-section: /education/courses
+section: /education
 breadcrumbs:
   - name: Обучение
     url: /education/
