@@ -41,12 +41,12 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Тег Description", name: "description", widget: "string"}
   - name: "types-of-guitars" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Виды гитар"
-    folder: "/source/_posts" # The path to the folder where the documents are stored
+    folder: "/source/_posts/types-of-guitars" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
     fields: # The fields each document in this collection have
       - {label: "Шаблон", name: "layout", widget: "hidden", default: "default"}
-      - {label: "Директория", name: "section", widget: "hidden", default: "/about-guitars/types-of-guitars"}
+      - {label: "Директория", name: "section", widget: "hidden", default: "/about-guitars"}
       - {label: "Название вида", name: "title", widget: "string"}
       - {label: "Главная картинка", name: "banner", widget: "image", required: false}
       - {label: "Описание", name: "description", widget: "markdown"}
