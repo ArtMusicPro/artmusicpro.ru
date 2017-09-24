@@ -25,7 +25,7 @@ require('./icons/place.svg');
 require('jquery');
 
 // tether
-import 'tether';
+import 'popper.js';
 
 // bootstrap scripts
 require('./js/partials/bootstrap/util.js');

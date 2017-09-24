@@ -9,7 +9,7 @@ public_folder: "assets/images/uploads"
 collections: # A list of collections the CMS should be able to edit
   - name: "cource" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Курс"
-    folder: "/source/_posts" # The path to the folder where the documents are stored
+    folder: "/source/_posts/courses" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
     fields: # The fields each document in this collection have
@@ -22,13 +22,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "в Химках", name: "subtitle", widget: "boolean"}
       - {label: "Главная картинка курса", name: "banner", widget: "image", required: false}
       - {label: "Стоимость курса", name: "price", widget: "string"}
-      - {label: "Подробное описание стоимости", name: "more-price", widget: "markdown"}
-      - {label: "Количество занятий курса", name: "number-lesson", widget: "number"}
+      - {label: "Подробное описание стоимости", name: "morePrice", widget: "markdown"}
+      - {label: "Количество занятий курса", name: "numberLesson", widget: "number"}
       - {label: "Продолжительность в месяцах", name: "month", widget: "number"}
       - {label: "Состав слушателей", name: "members", widget: "list"}
       - {label: "Место занятий", name: "place", widget: "list"}
       - {label: "Возраст слушателей", name: "age", widget: "string"}
-      - {label: "Программа курса", name: "program", widget: "markdown"}
+      - {label: "Программа курса", name: "program", widget: "list"}
       - {label: "Чему Вы научитесь", name: "result", widget: "markdown"}
       - {label: "Описание курса", name: "content", widget: "markdown"}
       - label: "SEO параметры страницы"

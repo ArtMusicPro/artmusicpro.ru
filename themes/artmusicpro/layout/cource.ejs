@@ -2,7 +2,7 @@
   <div class="container">
     <%- partial('common/main-title') %>
     <div class="main__image">
-      <img class="main-image" src="<%= page.banner %>" width="400" alt="Базовый курс игры на гитаре">
+      <img class="main-image" src="<%= page.banner %>" width="400" alt="<%= page.title %>">
     </div>
     <div class="main__content">
       <div class="content">
@@ -33,10 +33,10 @@
         </div>
         <h3 class="attribute__title">Состав</h3>
         <div class="attribute__value">
-          <% console.log(page.members) %>
           <ul class="attribute__value-list">
-            <li class="attribute__value-item">индивидуальное</li>
-            <li class="attribute__value-item">мини-группа</li>
+              <% for(var i=0; i<page.members.length; i++) {%>
+                  <li class="attribute__value-item"><%= page.members[i] %></li>
+               <% } %>
           </ul>
         </div>
       </div>
@@ -48,10 +48,12 @@
           </svg>
         </div>
         <h3 class="attribute__title">Место занятий</h3>
-        <div class="attribute__value">
+        <div class="attribute__value"
+          <% console.log(page.place) %></div>
           <ul class="attribute__value-list">
-            <li class="attribute__value-item">в школе</li>
-            <li class="attribute__value-item">на дому</li>
+            <% for(var i=0; i<page.place.length; i++) {%>
+              <li class="attribute__value-item"><%= page.place[i] %></li>
+            <% } %>
           </ul>
         </div>
       </div>
@@ -63,8 +65,11 @@
           </svg>
         </div>
         <h3 class="attribute__title">Стоимость курса</h3>
-        <div class="attribute__value">от 3500 руб. в месяц</div>
-        <a href="#" class="attribute__link-more" id="link-more-price">Подробнее</a>
+        <div class="attribute__value"><% if(page.price != "") { %><%= page.price %><% } else { %>Договорная<% } %></div>
+        <% if(page.morePrice != "") { %>
+          <a href="#" class="attribute__link-more" id="link-more-price">Подробнее</a>
+        <% } %>
+        
       </div>
       
     </div>
@@ -74,40 +79,33 @@
       <section class="more-course__program program">
         <h2 class="program__title">Программа курса</h2>
         <p class="program__lesson">
-          <span class="program__lesson-number">8</span>&nbsp;
-          <span class="program__lesson-link" data-toggle="popover" data-placement="bottom" data-content="Продолжительность одного занятия 60 минут" data-original-title="" title="">занятий</span>
+          <span class="program__lesson-number"><%= page.numberLesson %></span>&nbsp;
+
+          <span class="program__lesson-link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Продолжительность одного занятия 60 минут"><%- declOfNum(page.numberLesson, ['занятие', 'занятия', 'занятий']) %></span>
+
           <span class="program__lesson-separator">/</span>
-          <span class="program__lesson-number">1</span>&nbsp;месяц
+          <span class="program__lesson-number"><%= page.month %></span>&nbsp;<%- declOfNum(page.month, ['месяц', 'месяца', 'месяцев']) %>
+          
         </p>
         <ul class="program__list">
-          <li class="program__list-item">устройство гитары</li>
-          <li class="program__list-item">постановка рук, физиология игры на инструменте</li>
-          <li class="program__list-item">изучение основных технических приемов</li>
-          <li class="program__list-item">способы настройки гитары</li>
-          <li class="program__list-item">игра аккомпанемента, базовые аккорды</li>
-          <li class="program__list-item">исполнение мелодических композиций</li>
-          <li class="program__list-item">упражнения на развитие музыкального слуха</li>
+          <% console.log(page.program) %>
+          <% for(var i=0; i<page.program.length; i++) {%>
+            <li class="program__list-item"><%= page.program[i] %></li>
+          <% } %>
         </ul>
-
-
-
       </section>
       <section class="more-course__result result">
         <h2 class="result__title">Чему Вы научитесь, пройдя курс</h2>
-        <div class="result__text">
-          <p>Закончив этот курс обучения, вы сможете исполнить несколько мелодических пьес и порадовать своих близких песнями под аккомпанемент в собственном исполнении</p>
-        </div>
+        <div class="result__text"><%- markdown(page.result) %></div>
       </section>
     </div>
   </div>
-  <section class="price-more" id="price-more">
-    <div class="container">
-      <h2 class="price-more__title">Стоимость курса</h2>
-      <div class="price-more__text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt itaque vero consequuntur recusandae a nobis quas quo ex voluptates ullam inventore quam omnis excepturi aliquam harum autem perspiciatis officiis amet quasi corporis delectus corrupti
-          esse sit veniam doloribus beatae eveniet!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nulla impedit aliquid rem mollitia consequuntur possimus totam accusamus labore sint maiores non error odio repudiandae!</p>
+  <% if(page.morePrice != "") { %>
+    <section class="price-more" id="price-more">
+      <div class="container">
+        <h2 class="price-more__title">Стоимость курса</h2>
+        <div class="price-more__text"><%- markdown(page.morePrice) %></div>
       </div>
-    </div>
-  </section>
+    </section>
+  <% } %>
 </main>

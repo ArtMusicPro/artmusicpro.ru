@@ -107,11 +107,22 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             NODE_ENV: JSON.stringify(NODE_ENV),
-            $: "jquery/dist/jquery.js",
-            jQuery: "jquery/dist/jquery.js",
-            "window.jQuery": "jquery/dist/jquery.js",
-            Tether: "tether/dist/js/tether.js",
-            Tether: "tether/dist/js/tether.js"
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            Popper: ['popper.js', 'default'],
+            // In case you imported plugins individually, you must also require them here:
+            Util: "exports-loader?Util!bootstrap/js/dist/util",
+            Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
+            Alert: "exports-loader?Alert!bootstrap/js/dist/alert",
+            Button: "exports-loader?Button!bootstrap/js/dist/button",
+            Carousel: "exports-loader?Carousel!bootstrap/js/dist/carousel",
+            Collapse: "exports-loader?Collapse!bootstrap/js/dist/collapse",
+            Modal: "exports-loader?Modal!bootstrap/js/dist/modal",
+            Popover: "exports-loader?Popover!bootstrap/js/dist/popover",
+            Scrollspy: "exports-loader?Scrollspy!bootstrap/js/dist/scrollspy",
+            Tab: "exports-loader?Tab!bootstrap/js/dist/tab",
+            Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip"
         }),
         // new webpack.optimize.CommonsChunkPlugin({
         //     name: "commons",
@@ -133,10 +144,10 @@ module.exports = {
     devServer: {
         contentBase: __dirname + "/public/",
         // inline: true,
-        // port: 8080,
+        // port: 8080
         // hot: true
         proxy: {
-            "/": "http://localhost:8081"
+            "/": "http://localhost:4000"
         }
     }
 };

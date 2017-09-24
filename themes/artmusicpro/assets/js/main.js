@@ -4,7 +4,7 @@
 //= partials/jquery/jquery.js
 
 // tether
-//= partials/tether/tether.js
+// partials/tether/tether.js
 
 // bootstrap scripts
 //= partials/bootstrap/util.js
