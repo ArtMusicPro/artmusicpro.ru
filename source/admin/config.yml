@@ -53,6 +53,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Полное название вида гитары", name: "longtitle", widget: "string"}
       - {label: "Главная картинка", name: "banner", widget: "image", required: false}
       - {label: "Описание", name: "content", widget: "markdown"}
+      - {label: "Видеоролик", name: "video", widget: "youtube"}
       - label: "SEO параметры страницы"
         name: "seo"
         widget: "object"

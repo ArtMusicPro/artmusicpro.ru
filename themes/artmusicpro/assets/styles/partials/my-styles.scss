@@ -352,6 +352,8 @@
         }
         &_width-100 {
             flex: 0 0 100%;
+            margin-bottom: 35px;
+            padding-right: 0;
             & + .main__content {
                 flex: 0 0 100%;
             }
@@ -407,7 +409,7 @@
     }
 }
 .main-image {
-    width: 400px;
+    // width: 400px;
     max-width: 100%;
     height: auto;
 }
