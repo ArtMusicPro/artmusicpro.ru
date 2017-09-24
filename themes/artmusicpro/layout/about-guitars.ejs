@@ -1,9 +1,11 @@
 <main class="main">
     <div class="container">
         <%- partial('common/main-title') %>
-        <div class="main__image">
-            <img class="main-image" src="<%= page.banner %>" width="400" alt="<%= page.title %>">
-        </div>
+        <% if(page.banner) { %>
+            <div class="main__image">
+                <img class="main-image" src="<%= page.banner %>" width="400" alt="<%= page.title %>">
+            </div>
+        <% } %>
         <div class="main__content">
             <div class="content">
                 <%- page.content %>

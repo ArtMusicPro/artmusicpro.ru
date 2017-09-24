@@ -44,12 +44,23 @@ collections: # A list of collections the CMS should be able to edit
     folder: "/source/_posts/types-of-guitars" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
+    
     fields: # The fields each document in this collection have
-      - {label: "Шаблон", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Шаблон", name: "layout", widget: "hidden", default: "about-guitars"}
       - {label: "Директория", name: "section", widget: "hidden", default: "/about-guitars"}
-      - {label: "Название вида", name: "title", widget: "string"}
+      - {label: "Хлебные крошки", name: "breadcrumbs", widget: "hidden", default: "[{name: О гитарах, url: /about-guitars/},{name: Типы гитар, url: /about-guitars/types-of-guitars/}]"}
+      - {label: "Краткое название вида гитары", name: "title", widget: "string"}
+      - {label: "Полное название вида гитары", name: "longtitle", widget: "string"}
       - {label: "Главная картинка", name: "banner", widget: "image", required: false}
       - {label: "Описание", name: "description", widget: "markdown"}
+      - label: "SEO параметры страницы"
+        name: "seo"
+        widget: "object"
+        fields:
+          - {label: "Тег Title", name: "title", widget: "string"}
+          - {label: "Тег h1", name: "h1", widget: "string"}
+          - {label: "Тег Keywords", name: "keywords", widget: "string"}
+          - {label: "Тег Description", name: "description", widget: "string"}
   - name: "data"
     label: "Данные"
     files:
