@@ -1,6 +1,6 @@
 ---
 layout: default
-section: /about-guitars/types-of-guitars
+section: /about-guitars
 title: Класическая
 banner: null
 description: |-
