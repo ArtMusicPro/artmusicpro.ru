@@ -352,7 +352,7 @@
         }
         &_width-100 {
             flex: 0 0 100%;
-            & + main__content {
+            & + .main__content {
                 flex: 0 0 100%;
             }
         }
