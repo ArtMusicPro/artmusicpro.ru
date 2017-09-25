@@ -39,12 +39,12 @@ Beatles, David Gilmore, Pink Floyd, Van Halen и многие другие.
 
 ## Рассмотрим основные виды аккордов на гитаре. 
 
-![Основные виды аккордов на гитаре](/assets/images/uploads/noti.jpeg)
+![Основные виды аккордов на гитаре](/assets/images/uploads/noti.jpg)
 
 
 ### Em. Ми-минор.
 
-![Em - Ми-минор](/assets/images/uploads/miminor.jpeg)
+![Em - Ми-минор](/assets/images/uploads/miminor.jpg)
 
 Очень простой аккорд. Два пальца левой руки ставим:
 средний на 2-й лад 5-й струны и безымянный второй лад 4-й струны. 
@@ -52,7 +52,7 @@ Beatles, David Gilmore, Pink Floyd, Van Halen и многие другие.
 
 ### Е. Ми-мажор.
 
-![Е - Ми-мажор](/assets/images/uploads/mimazhor.jpeg)
+![Е - Ми-мажор](/assets/images/uploads/mimazhor.jpg)
 
 Добавляем к предыдущему аккорду указательный палец на 1-м
 ладу 3-й струны.
@@ -62,7 +62,7 @@ Beatles, David Gilmore, Pink Floyd, Van Halen и многие другие.
 
 ### Аm. Ля-минор.
 
-![Аm - Ля-минор](/assets/images/uploads/lyaminor.jpeg)
+![Аm - Ля-минор](/assets/images/uploads/lyaminor.jpg)
 
 Берём аппликатуру предыдущего ми-мажора и переносим на
 струны ниже. С 5-й, 4-й, 3-й на 4-ю, 3-ю и 2-ю. Получаем тот самый легендарный
@@ -71,7 +71,7 @@ Beatles, David Gilmore, Pink Floyd, Van Halen и многие другие.
 
 ### А. Ля-мажор.
 
-![А - Ля-мажор](/assets/images/uploads/lyamazhor.jpeg)
+![А - Ля-мажор](/assets/images/uploads/lyamazhor.jpg)
 
 Снова отталкиваемы от аппликатуры предыдущего аккорда.
 Убираем указательный палец со 2-й струны и ставим мизинец на 2-й лад 2-й
@@ -83,7 +83,7 @@ Beatles, David Gilmore, Pink Floyd, Van Halen и многие другие.
 
 ### Dm. Ре-минор.
 
-![Dm - Ре-минор](/assets/images/uploads/reminor.jpeg) 
+![Dm - Ре-минор](/assets/images/uploads/reminor.jpg) 
 
 * 3-я струна 2-й лад - средний палец.
 * 2-я струна 3-й лад - мизинец.
@@ -92,7 +92,7 @@ Beatles, David Gilmore, Pink Floyd, Van Halen и многие другие.
 
 ### D. Ре-мажор.
 
-![D - Ре-мажор](/assets/images/uploads/remazhor.jpeg)
+![D - Ре-мажор](/assets/images/uploads/remazhor.jpg)
 
 * 1-я струна 2-й лад - средний палец.
 * 2-я струна 3-й лад - безымянный палец.
@@ -101,7 +101,7 @@ Beatles, David Gilmore, Pink Floyd, Van Halen и многие другие.
 
 ### С. До-мажор.
 
-![С - До-мажор](/assets/images/uploads/domazhor.jpeg)
+![С - До-мажор](/assets/images/uploads/domazhor.jpg)
 
 * 5-я струна 3-й лад - безымянный.
 * 4-я струна 2-й лад - средний палец.
@@ -110,7 +110,7 @@ Beatles, David Gilmore, Pink Floyd, Van Halen и многие другие.
 
 ### G. Соль-мажор.
 
-![G - Соль-мажор](/assets/images/uploads/solmazhor.jpeg)
+![G - Соль-мажор](/assets/images/uploads/solmazhor.jpg)
 
 * 6-я струна 3-й лад - средний палец.
 * 5-я струна 2-й лад - указательный.
