@@ -1,9 +1,16 @@
 ---
 layout: about-guitars
+typePost: types-of-guitars
 section: /about-guitars
 title: Классическая
 longtitle: Классическая гитара
 banner: /assets/images/uploads/classic.jpeg
+breadcrumbs:
+  - name: О гитарах
+    url: /about-guitars/
+  - name: Виды гитар
+    url: /about-guitars/types-of-guitars/
+breadcrumbCurrent: true
 content: >+
   Предполагает игру на гитаре с нейлоновыми струнами ногтевым способом. Это 
   исполнение классической музыки Барокко, Венский классицизм, а также фламенко

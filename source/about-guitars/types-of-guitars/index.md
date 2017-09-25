@@ -1,4 +1,10 @@
 ---
-title: Типы гитар
-date: 2017-07-13 05:48:45
+layout: about-guitars-list
+title: Виды гитар
+longtitle: Разновидности гитар
+typePost: types-of-guitars
+breadcrumbs:
+  - name: О гитарах
+    url: /about-guitars/
+breadcrumbCurrent: true
 ---

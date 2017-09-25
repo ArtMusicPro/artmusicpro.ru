@@ -1,4 +1,4 @@
 ---
 title: Информация о гитарах
-date: 2017-07-13 05:48:45
+breadcrumbCurrent: true
 ---

@@ -1,1 +1,15 @@
-<div class="content">Page</div>
+<main class="main">
+    <div class="container">
+        <%- partial('common/main-title') %>
+        <% if(page.banner) { %>
+            <div class="main__image main__image_width-100">
+                <img class="main-image" src="<%= page.banner %>" alt="<%= page.title %>">
+            </div>
+        <% } %>
+        <div class="main__content main__content_width-100">
+            <div class="content">
+                <%- markdown(page.content) %>
+            </div>
+        </div>
+    </div>
+</main>
