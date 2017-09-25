@@ -6,6 +6,7 @@ breadcrumbs:
   - name: О гитарах
     url: /about-guitars/
 breadcrumbCurrent: true
+comments: true
 ---
 
 ## Стилей игры существует большое количество. 

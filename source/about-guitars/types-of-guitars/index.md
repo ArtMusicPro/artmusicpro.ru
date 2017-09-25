@@ -7,4 +7,5 @@ breadcrumbs:
   - name: О гитарах
     url: /about-guitars/
 breadcrumbCurrent: true
+comments: true
 ---
