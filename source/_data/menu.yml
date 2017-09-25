@@ -5,7 +5,7 @@ menu:
         url: /education/courses/
       - name: Занятия
         url: /education/lessons/
-      - name: Преподователи
+      - name: Преподаватели
         url: /education/teachers/
     name: Обучение
     url: /education/

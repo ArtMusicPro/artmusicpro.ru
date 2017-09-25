@@ -1,5 +1,6 @@
 ---
-layout: cource
+layout: course
+typePost: course
 section: /education
 breadcrumbs:
   - name: Обучение

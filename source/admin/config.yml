@@ -13,7 +13,8 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template
     fields: # The fields each document in this collection have
-      - {label: "Шаблон", name: "layout", widget: "hidden", default: "cource"}
+      - {label: "Тип поста", name: "typePost", widget: "hidden", default: "course"}
+      - {label: "Шаблон", name: "layout", widget: "hidden", default: "course"}
       - {label: "Директория", name: "section", widget: "hidden", default: "/education/courses"}
       - {label: "Хлебные крошки", name: "breadcrumbs", widget: "hidden", default: "[{name: Обучение, url: /education/},{name: Курсы, url: /education/courses/}]"}
       - {label: "Текущая страница в хлебных крошек", name: "breadcrumbCurrent", widget: "boolean", default: "true"}
