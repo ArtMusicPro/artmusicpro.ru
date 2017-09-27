@@ -116,6 +116,20 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Тег Keywords", name: "keywords", widget: "string"}
           - {label: "Тег Description", name: "description", widget: "string"}
   - name: "data"
+    label: "Data"
+    files:
+      - name: "characters"
+        label: "Characters"
+        file: "source/_data/characters.yml"
+        fields:
+          - label: "Characters"
+            name: "list"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Image", name: "image", widget: "image", media_folder: "assets/images"}
+              - {label: "Description", name: "description", widget: "string"}
+  - name: "data"
     label: "Данные"
     files:
       - name: "company"
@@ -130,7 +144,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Адрес", name: "address", widget: "string"}
       - name: "menu"
         label: "Главное меню"
-        file: "source/_data/menunew.yml"
+        file: "source/_data/menu.yml"
         fields:
           - label: "Пункты меню"
             name: "menu"
