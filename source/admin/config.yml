@@ -145,7 +145,7 @@ collections: # A list of collections the CMS should be able to edit
       - name: "menu"
         label: "Главное меню"
         file: "source/_data/menu.yml"
-        fields:
+        fields: 
           - label: "Пункты меню"
             name: "menu"
             widget: "list"
