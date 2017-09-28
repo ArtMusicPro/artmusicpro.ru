@@ -9,13 +9,14 @@
       </div>
       <div class="modal-body">
         <form action="thank-you" class="call-me">
-            <div class="call-me__input-group">
-                <svg class="call-me__icon">
-                  <%- partial('use-in-svg', {icon: "phone"}) %>
-                </svg>
-                <input class="call-me__input" type="tel" placeholder="Введите номер телефона"/>
-            </div>
-            <input class="call-me__submit" type="submit" value="Перезвоните мне"/>
+          <input type="hidden" name="url" value="https://artmusicpro.ru<%- url_for(page.path) %>"/>
+          <div class="call-me__input-group">
+              <svg class="call-me__icon">
+                <%- partial('use-in-svg', {icon: "phone"}) %>
+              </svg>
+              <input name="client-phone" class="call-me__input" type="tel" placeholder="Введите номер телефона"/>
+          </div>
+          <input class="call-me__submit" type="submit" value="Перезвоните мне"/>
         </form>
       </div>
     </div>
